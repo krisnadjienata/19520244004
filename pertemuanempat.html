@@ -1,0 +1,92 @@
+<!DECOTYPE html>
+
+<head>
+	<title>
+		validasi HTML
+	</title>
+</head>
+
+<body>
+	<h3> formulir dengan validas </h3>
+	<form action=" " method="post">
+	<!--awal form-->
+	
+	<table border=0>
+		
+	</table>
+	</form>
+	
+	
+	<!--form-->
+	<!--modul 3-->
+		<h3>Formulir Pendaftaran</h3>
+		<form action=" " method="post">
+		<table border=0>
+			<tr>
+				<td> Nama Lengkap </td>
+				<td><input type="text" name="nama" size="30" placeholder="Masukkan Nama Lengkap Anda " size="25" required/></td>
+			</tr>
+			<tr>
+				<td> Username </td>
+				<td><input type="text" size="30" placeholder="masukkan Username" required/></td>
+			</tr>
+			<tr>
+				<td> Password </td>
+				<td><input type="text" name="pass" size="30" minlength="8" placeholder="Masukkan Password" required/></td>
+			</tr>
+			<tr>
+				<td> Tanggal Lahir</td>
+				<td> <input type="date" name="birth" required/> </td>
+			</tr>
+			<tr>
+				<td> Email </td>
+				<td> <input type="email" name="email" size="30" placeholder="Masukkan Alamat e-mail Anda" required/></td>
+			</tr>
+			<tr>
+				<td> Telepon </td>
+				<td> <input type="text" name="tel" size="30" maxlength="12" placeholder ="Masukkan Nomor Telepon Anda" required/></td>
+			</tr>
+
+			<tr cellspacing=0>
+				<td></td>
+				<td>
+					<input type="submit" value="BUAT AKUN"/>
+				</td>
+			</tr>
+		</table>
+		</form>
+		
+	<!--studi kasus-->
+	
+	<h3> Studi Kasus: Validasi Input HTML5</h3>
+	<form action="" method="post">
+	<table border=0>
+		<tr>
+			<td> Nama</td>
+			<td>:<input type="text" name="nama" size="25" pattern="[A-Za-z]+" placeholder="Masukkan Nama Anda" required/></td>
+		</tr>
+		<tr>
+			<td> Usia</td>
+			<td>:<input type="number" name="usia" size="5" min="17" max="30" required/>(usia min 17-30) </td>
+		</tr>
+		<tr>
+			<td> Email</td>
+			<td>:<input type="email" name="email" size="25" placeholder="nama_email@host.com" required/></td>
+		</tr>
+		<tr>
+			<td> Web</td>
+			<td>:<input type="text" name="web" size="35" placeholder="http://" required/></td>
+		</tr>
+		<tr>
+			<td> Password</td>
+			<td>:<input type="password" placeholder="Semua karakter, min 8" minlength="8" required/> (Bonus)</td>
+		</tr>
+		<tr cellspacing=0>
+			<td></td>
+			<td>
+				<input type="submit" value="Submit"/>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
