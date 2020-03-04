@@ -1,0 +1,266 @@
+<!DECOTYPE html>
+<html lang="en">
+
+<head>
+	<title> Inline Style</title>
+	
+	<!--atribut class-->
+	<style type="text/css">
+	<!--
+	.style1 {
+		color:red;
+		font-style: italic;
+	}
+	
+	#style2 {
+		color:blue;
+		font-weight: bold;
+	}
+	-->
+	
+	<!--link css-->
+	</style>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+	<!--tipografi-->
+		<style type="text/css">
+		<!--
+		.style_font {
+			font-family: Georgia;
+			fint-size : 18px;
+			font-style: italic;
+			font-weight: bold;
+			text-decoration: underline;
+			color: red;
+		}
+		-->
+		</style>
+
+	<!--border-->
+		<style type="text/css">
+		<!--
+		.border1 {
+			border: 1px solid brown;
+		}
+		.border2 {
+			border: 1px dashed brown;
+		}
+		.border3 {
+			border: 1px dotted brown;
+		-->
+		</style>
+		
+	<!--padding-->
+	<style type="text/css">
+		<!--
+		.border1padd {
+			border: 1px solid green;
+			padding: 10px;
+		}
+		.border2padd {
+			border: 1px solid green;
+			padding: 20px 10px 5px 40px;
+		}
+		-->
+	<style>
+	
+	<!--list-->
+	<style type="text/css">
+	<!--
+	#leftmenu ul {
+		width: 500px;
+		list-style-type:none;
+		padding:0; margin:0;
+	}
+	#leftmenu a:link, #leftmenu a:visited, #leftmenu a:active{
+		padding-left: 15px;
+		text-decoration: none;
+	}
+	#leftmenu a{
+		padding: 5px 0px 5px 15px; display: block;
+		background: #111119 no-repeat left center;
+		margin: 0px 0px 1px; color #ffffff
+	}
+	#leftmenu a:hover {
+		background: #ff3259 no-repeat left center; color: #ffffff
+	}
+	-->
+	</style>
+	
+	<!--division ukuran area-->
+	<style type="text/css">
+	<!--
+	.box1 {
+		width: 200px;
+		height: 50px;
+		background: grey;
+		border: 1px solid red;
+	}
+	.box2 {
+		margin:10px;
+		paddding: 10px;
+		width: 400px;
+		height: 100px;
+		border: 1px solid red;
+	}
+	-->
+	</style>
+	<!--posisi area-->
+	<style type="text/css">
+	<!--
+	.box3 {
+		float: left;
+		width: 200px;
+		height: 50px;
+		background: grey;
+		border: 1px solid red;
+	}
+	.box4 {
+		float: right;
+		padding: 10px;
+		width: 300px;
+		height: 100px;
+		border: 1px solid red;
+	}
+	.box5 {
+		/* me-reset pengaturan float left maupun right */
+		clear: both;
+		float: left;
+		width: 200px;
+		height: 50px;
+		background: grey;
+		border: 1px solid red;
+	}
+	-->
+	</style>
+	
+	<!--rounded-->
+	
+</head>
+
+<body>
+	<!--embedded style pada paragraf-->
+	<!--inline-->
+	<p style="color:red; font-style:italic">
+		ini paragraf pertama
+	<p style="color:blue; font-weight:bold">
+		hari ini adalah hari kamis seperti biasa kuliah sesuai jadwal
+	<p>
+	ini paragraf ketiga saya <br/> <br/>
+	
+	<!--embedded-->
+
+	<!--atribut class-->
+	<p class="style1">
+		ini paragraf pertama
+	<p id="style2">
+		hari ini adalah hari kamis seperti biasa kuliah sesuai jadwal
+	<p class="style1">
+		paragraf ketiga
+	
+	<!--linked memanggil css-->
+	<br/><br/>
+	<p class="stylecss1">
+		ini paragraf pertama
+	<p id="stylecss2">
+		hari ini adalah hari kamis seperti biasa kuliah sesuai jadwal
+	<p class="stylecss1">
+		paragraf ketiga
+	
+	<!--tipografi-->
+	<p class="style_font">
+	bagian tipografi
+	<p>
+	bagian tipografi biasa
+	
+	<!--border-->
+	<p class="border1">
+		bagian border satu
+	<p class="border2">
+		bagian border dua
+	<p class="border3">
+		bagian border tiga
+	
+	<!--padding-->
+	<p class="border1padd">
+	bagian padding
+	<p class="border2padd">
+	bagian padding dua
+	
+	<!--list-->
+	list normal
+	<u1>
+		<li>satu</li>
+		<li>dua</li>
+	</ul>
+	
+	<hr/>
+	
+	style list
+	<div id="leftmenu">
+	<ul>
+		<li><a href="#">menu satu</a></li>
+		<li><a href="#">menu dua</a></li>
+		<li><a href="#">menu tiga</a></li>
+	</ul>
+	</div>
+	
+	<!-- division ukuran area-->
+	<div class="box1">
+	paragraf ini didalam tag &lt;div&gt;
+	</div>
+	
+	<div class="box2">
+	bagian division ukuran area
+	</div>
+
+	<!--posisi area-->
+	<div class="box3">
+	posisi area kiri atas &lt;div&gt;
+	</div>
+	<div class="box4">
+	posisi area kanan
+	</div>
+	<div class="box5">
+	Posisi area kiri bawah &lt;div&gt;
+	</div>
+	<br/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+	<!--rounded-->
+	
+	<style type="text/css">
+	
+		.round {
+		background-color: #ddccb5;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 2px solid #897048;
+		padding: 10px;
+		width: 310px;
+		}
+		
+	</style>
+	
+	<div class="round">
+	yang kecil
+	</div>
+	<br/>
+	<div class="round">
+	yang <hr/>
+	BESAR
+	.....
+	</div>
+	
+	<!--studi kasus-->
+	<h3> studi kasus </h3>
+	
+	<div class="lingkaran">
+		<p align="center" /p>
+			lingkaran kotak dari fungsi shape
+		</div>
+	<div class="kotakbunder">hehe</div>
+	<div class="kotak">kotak yang ini ada bayangannya lho</div>
+	
+
+</body>
+</html>
