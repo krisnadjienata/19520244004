@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animasi Transisi CSS3</title>
+		<style>
+			/* Kondisi box awal */
+			.box {
+				width: 40%;
+				height: 100px;
+				background: #102b3e;
+				border: 5px solid #1cc8a0;
+				/* Animasi lebar box */
+				-webkit-transition: width 1s ease-in-out;
+				-o-transition: width 1s ease-in-out;
+				-moz-transition: width 1s ease-in-out;
+				transition: width 1s ease-in-out;
+				}
+				
+				/* Jika landscape, perlebar 100% */
+				@media (orientation:landscape) {
+				.box {
+				width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body bgcolor="#ced8e1">
+		
+		<h3><font color=#102b3e></color>Transisi CSS3</h3>
+		
+		<div class="box"></div>
+		
+		<p>
+		<font color=#102b3e></color>
+		Ubah orientasi ke landscape/portrait dan sebaliknya
+		untuk melihat efek transisi
+		</p>
+		
+	</body>
+</html>
